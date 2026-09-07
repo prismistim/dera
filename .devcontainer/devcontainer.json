@@ -1,5 +1,5 @@
 {
-  "name": "oriori",
+  "name": "dera",
   "build": {
     "dockerfile": "Dockerfile"
   },
@@ -25,7 +25,9 @@
         "oxc.oxc-vscode",
         "openai.chatgpt",
         "ms-azuretools.vscode-containers",
-        "emmanuelbeziat.vscode-great-icons"
+        "emmanuelbeziat.vscode-great-icons",
+        "mhutchie.git-graph",
+        "Vue.volar"
       ]
     }
   }

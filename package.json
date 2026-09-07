@@ -1,11 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "dev": "pnpm --filter web dev",
+    "dev:web": "pnpm --filter web dev",
+    "dev:worker": "pnpm --filter worker dev",
     "build": "pnpm --filter web build",
     "lint": "pnpm --filter web lint",
-    "format": "pnpm --filter web format",
-    "test": "pnpm --filter web test"
+    "format": "pnpm --filter web format"
   },
   "devEngines": {
     "packageManager": {

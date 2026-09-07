@@ -1,5 +1,5 @@
 {
-  "name": "oriori",
+  "name": "web",
   "private": true,
   "type": "module",
   "scripts": {
@@ -28,6 +28,7 @@
     "microcms-js-sdk": "^3.4.0",
     "oxfmt": "^0.60.0",
     "oxlint": "^1.78.0",
+    "oxlint-tsgolint": "^7.0.2001",
     "quicktype": "^26.0.0",
     "typescript": "^7.0.2",
     "unocss": "^66.7.5",

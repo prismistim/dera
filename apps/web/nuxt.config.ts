@@ -15,14 +15,5 @@ export default defineNuxtConfig({
   },
   fonts: {
     families: [{ name: 'Rubik', provider: 'fontsource' }],
-  },
-  runtimeConfig: {
-    microcmsServerDomain: '',
-    microcmsApiKey: '',
-  },
-  routeRules: {
-    '/api/articles': {
-      swr: 300
-    }
   }
 })
