@@ -18,7 +18,15 @@
   "postCreateCommand": "if [ -f pnpm-lock.yaml ]; then pnpm install --frozen-lockfile; fi",
   "customizations": {
     "vscode": {
-      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "bradlc.vscode-tailwindcss"]
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "oxc.oxc-vscode",
+        "openai.chatgpt",
+        "ms-azuretools.vscode-containers",
+        "emmanuelbeziat.vscode-great-icons"
+      ]
     }
   }
 }

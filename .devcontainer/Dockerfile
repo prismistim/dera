@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/devcontainers/typescript-node:24-bookworm
 
-ARG PNPM_VERSION=11.17.0
+ARG PNPM_VERSION=12.3.4
 ARG SAFE_CHAIN_VERSION=1.5.13
 
 USER root
