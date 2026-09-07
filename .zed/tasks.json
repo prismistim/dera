@@ -1,0 +1,20 @@
+[
+  {
+    "label": "JSON to TS",
+    "command": "pnpm",
+    "args": [
+      "exec",
+      "quicktype",
+      "$ZED_FILE",
+      "--lang",
+      "typescript",
+      "--top-level",
+      "Root",
+      "--just-types",
+      "--out",
+      "$ZED_DIRNAME/$ZED_STEM.ts"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "reveal": "always"
+  }
+]

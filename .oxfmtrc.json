@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "experimentalSortImports": {
+    "order": "asc",
+    "newlinesBetween": false
+  },
+  "embeddedLanguageFormatting": "auto",
+  "semi": false,
+  "endOfLine": "lf",
+  "singleQuote": true,
+  "sortTailwindcss": true,
+  "printWidth": 120
+}

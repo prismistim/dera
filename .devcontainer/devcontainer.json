@@ -1,0 +1,24 @@
+{
+  "name": "oriori",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "node",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "nuxt",
+      "onAutoForward": "notify"
+    }
+  },
+  "mounts": ["source=${localEnv:HOME}/.gitconfig,target=/home/node/.gitconfig,type=bind,readonly"],
+  "remoteEnv": {
+    "PATH": "/home/node/.safe-chain/shims:/home/node/.safe-chain/bin:${containerEnv:PATH}"
+  },
+  "postCreateCommand": "if [ -f pnpm-lock.yaml ]; then pnpm install --frozen-lockfile; fi",
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "bradlc.vscode-tailwindcss"]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# 新しく公開されたバージョンを48時間待つ。
+# Safe Chainが無効・迂回された場合にもpnpm側で拒否する。
+minimumReleaseAge: 2880
+minimumReleaseAgeStrict: true
+
+# 過去のバージョンより署名・provenanceの信頼水準が
+# 下がったリリースを拒否する。
+trustPolicy: no-downgrade
+
+# 古いパッケージの署名運用差による誤検知を避けるため、
+# trustPolicyの対象を公開後7日以内に絞る。
+trustPolicyIgnoreAfter: 10080
+
+# lockfileも現在のポリシーで再検証する。
+trustLockfile: false
+
+# 推移依存が任意のGit URLやtarball URLを持ち込むのを防ぐ。
+blockExoticSubdeps: true
+
+# 未確認のpreinstall/install/postinstallがあればインストールを失敗させる。
+strictDepBuilds: true
+
+# 必要なものだけpnpm approve-buildsなどで追加する。
+allowBuilds: { esbuild: true, unrs-resolver: true }
+
+minimumReleaseAgeExclude:
+  - '@nuxt/kit@4.5.1'
+  - '@nuxt/nitro-server@4.5.1'
+  - '@nuxt/schema@4.5.1'
+  - '@nuxt/vite-builder@4.5.1'
+  - nuxt@4.5.1
