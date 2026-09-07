@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "@dera/web",
   "private": true,
   "type": "module",
   "scripts": {
@@ -24,13 +24,14 @@
     "@nuxt/fonts": "^0.14.0",
     "@unocss/nuxt": "^66.7.5",
     "date-fns": "^4.4.0",
+    "eslint": "^10.10.0",
     "eslint-plugin-oxlint": "^1.78.0",
     "microcms-js-sdk": "^3.4.0",
     "oxfmt": "^0.60.0",
     "oxlint": "^1.78.0",
     "oxlint-tsgolint": "^7.0.2001",
     "quicktype": "^26.0.0",
-    "typescript": "^7.0.2",
+    "typescript": "^6.0.3",
     "unocss": "^66.7.5",
     "vue-tsc": "^3.3.9"
   }

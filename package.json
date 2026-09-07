@@ -1,11 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "dev:web": "pnpm --filter web dev",
-    "dev:worker": "pnpm --filter worker dev",
-    "build": "pnpm --filter web build",
-    "lint": "pnpm --filter web lint",
-    "format": "pnpm --filter web format"
+    "dev:web": "pnpm --filter @dera/web dev",
+    "dev:worker": "pnpm --filter @dera/worker dev",
+    "build": "pnpm --filter @dera/web build",
+    "lint": "pnpm --filter @dera/web lint",
+    "format": "pnpm --filter @dera/web format"
   },
   "devEngines": {
     "packageManager": {

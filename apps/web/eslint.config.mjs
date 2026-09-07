@@ -1,4 +1,11 @@
+import withNuxt from './.nuxt/eslint.config.mjs'
 import oxlint from 'eslint-plugin-oxlint'
-import withNuxt from './.nuxt/eslint.conifg.mjs'
 
-export default withNuxt().prepend(oxlint.configs['flat/recommended'])
+export default withNuxt(
+    ...oxlint.configs['flat/recommended'],
+    {
+        rules: {
+            'vue/multi-word-component-names': 'off',
+        }
+    }
+)
