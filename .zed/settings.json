@@ -13,5 +13,8 @@
         "package_version": "7.0.2"
       }
     }
+  },
+  "file_types": {
+    "JSONC": ["**/wrangler.json"]
   }
 }
